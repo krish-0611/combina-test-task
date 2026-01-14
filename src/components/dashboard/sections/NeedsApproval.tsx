@@ -55,7 +55,7 @@ const NeedsApproval = () => {
     // TODO: Implement approve all functionality
   }
 
-  const handleReview = (id: string) => {
+  const handleReview = () => {
     // TODO: Implement review functionality
   }
 
@@ -123,7 +123,7 @@ const NeedsApproval = () => {
             <ApprovalItemCard
               key={item.id}
               item={item}
-              onReview={() => handleReview(item.id)}
+              onReview={() => handleReview()}
             />
           ))}
         </div>
